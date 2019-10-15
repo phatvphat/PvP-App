@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta https-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Epsilon 7.0</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/skin.css">
+    <link rel="stylesheet" type="text/css" href="styles/framework.css">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/plugins.js"></script>
+    <script type="text/javascript" src="scripts/custom.js"></script>
+</head>
+
+<body class="sidebar-bg-2">
+    <div id="page-transitions">
+        <div class="page-preloader page-preloader-dark">
+            <div class="spinner"></div>
+        </div>
+        <div class="sidebar-tap-close"></div>
+        <div class="fade-effect"></div>
+        <div class="sidebar-left">
+            <div class="sidebar-scroll">
+                <!-- <div class="sidebar-header">
+                    <a href="#" class="sidebar-logo"></a>
+                </div> -->
+                <div class="sidebar-menu">
+                    <a class="menu-item" href="index.html">
+                        <i class="ion-ios-heart-outline"></i>Trang chủ<i class="ion-record"></i>
+                    </a>
+                    <a class="menu-item active-item" href="tkb.html">
+                        <i class="ion-ios-calendar-outline"></i>Thời khoá biểu<i class="ion-record"></i>
+                    </a>
+                    <a class="menu-item" href="#">
+                        <i class="ion-ios-book-outline"></i>Todo<i class="ion-record"></i>
+                    </a>
+                    <a class="menu-item" href="profile.html">
+                        <i class="ion-ios-information-outline"></i>Thông tin app<i class="ion-record"></i>
+                    </a>
+                    <a class="menu-item" onclick="alert(1);">
+                        <i class="ion-log-out"></i>Đăng xuất<i class="ion-record"></i>
+                    </a>
+                    <a class="close-sidebar menu-item" href="#">
+                        <i class="ion-ios-close-empty"></i>Close<i class="ion-record"></i>
+                    </a>
+                </div>
+                <em class="sidebar-copyright">Copyright <span class="copyright-year"></span>. All Rights Reserved</em>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div class="sidebar-scroll">
+                <div class="sidebar-header">
+                    <a href="#" class="sidebar-logo"></a>
+                </div>
+                <div class="sidebar-menu">
+                    <a class="menu-item border-menu-yellow" href="#">
+                        <i class="ion-social-facebook"></i>Facebook<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-lime" href="#">
+                        <i class="ion-social-twitter"></i>Twitter<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-green" href="#">
+                        <i class="ion-social-googleplus-outline"></i>Google<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-teal" href="#">
+                        <i class="ion-social-linkedin"></i>LinkedIn<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-sky" href="#">
+                        <i class="ion-social-youtube"></i>YouTube<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-blue" href="#">
+                        <i class="ion-social-pinterest-outline"></i>Pinterest<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-purple" href="#">
+                        <i class="ion-social-instagram-outline"></i>Instagram<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-red" href="#">
+                        <i class="ion-ios-telephone"></i>Call Us<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-dawn" href="#">
+                        <i class="ion-social-skype"></i>Skype Us<i class="ion-link"></i>
+                    </a>
+                    <a class="menu-item border-menu-orange" href="#">
+                        <i class="ion-ios-email"></i>Mail Us<i class="ion-link"></i>
+                    </a>
+                </div>
+                <div class="sidebar-divider">
+                    SEND US A MESSAGE
+                </div>
+                <div class="sidebar-contact border-menu-dark">
+                    <div class="sidebar-form contact-form no-bottom">
+                        <p>Your message is important to us, and we'll get back to you in tops 48 hours</p>
+                        <div class="formSuccessMessageWrap" id="formSuccessMessageWrap">Awesome! We'll get back to you!
+                        </div>
+                        <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+                            <fieldset>
+                                <div class="formValidationError" id="contactNameFieldError">Name is required!</div>
+                                <div class="formValidationError" id="contactEmailFieldError">Mail address required!
+                                </div>
+                                <div class="formValidationError" id="contactEmailFieldError2">Mail address must be
+                                    valid!</div>
+                                <div class="formValidationError" id="contactMessageTextareaError">Message field is
+                                    empty!</div>
+                                <div class="formFieldWrap"><input onfocus="if (this.value=='Name') this.value = ''"
+                                        onblur="if (this.value=='') this.value = 'Name'" type="text"
+                                        name="contactNameField" value="Name" class="contactField requiredField"
+                                        id="contactNameField" /></div>
+                                <div class="formFieldWrap"><input onfocus="if (this.value=='Email') this.value = ''"
+                                        onblur="if (this.value=='') this.value = 'Email'" type="text"
+                                        name="contactEmailField" value="Email"
+                                        class="contactField requiredField requiredEmailField" id="contactEmailField" />
+                                </div>
+                                <div class="formTextareaWrap"><textarea
+                                        onfocus="if (this.value=='Message') this.value = ''"
+                                        onblur="if (this.value=='') this.value = 'Message'"
+                                        name="contactMessageTextarea" class="contactTextarea requiredField"
+                                        id="contactMessageTextarea">Message</textarea></div>
+                                <div class="formSubmitButtonErrorsWrap"><input type="submit"
+                                        class="buttonWrap button button-green contactSubmitButton no-bottom"
+                                        id="contactSubmitButton" value="SUBMIT" data-formId="contactForm" /></div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <em class="sidebar-copyright">Copyright <span class="copyright-year"></span>. All Rights Reserved</em>
+            </div>
+        </div>
+        <div id="page-content" class="header-clear">
+            <div class="header">
+                <a href="#" class="header-icon-1 open-left-sidebar"><i class="ion-navicon"></i></a>
+                <!-- <a href="#" class="header-logo scale-hover"></a> -->
+                <!-- <a href="#" class="header-icon-4 open-right-sidebar"><i class="ion-ios-email-outline"></i></a> -->
+            </div>
+            <div id="page-content-scroll">
+                <div class="home-slider half-bottom">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="responsive-image" src="images/pictures/1.jpg" alt="img">
+                            <h4 class="center-text">Meet Sceena</h4>
+                            <p class="center-text">Creativity and Simplicity</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="responsive-image" src="images/pictures/4.jpg" alt="img">
+                            <h4 class="center-text">It's <span class="color-red-light">Powerful</span></h4>
+                            <p class="center-text">Optimize code, blazing fast loading!</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="responsive-image" src="images/pictures/0.jpg" alt="img">
+                            <h4 class="center-text">It's <span class="color-green-dark">Simple</span></h4>
+                            <p class="center-text">Clean code, awesome support!</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="responsive-image" src="images/pictures/4.jpg" alt="img">
+                            <h4 class="center-text">It's <span class="color-blue-dark">Reliable</span></h4>
+                            <p class="center-text">20.000 Happy Customer can Vouch!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <h4 class="center-text half-bottom thiner">XEM LỊCH HỌC</h4>
+                    <!-- <p>Kiểm tra kết nối mạng: <span id="check_network"></span></p> -->
+                    <!-- <p class="center-text center-boxed-text">Bla.</p> -->
+                </div>
+                <div class="footer footer-dark">
+                    <!-- <a href="index.html" class="footer-logo scale-hover"></a> -->
+                    <p><q>Debug là việc khó gấp đôi code. Nếu viết code thông minh quá mức, bạn sẽ không đủ thông minh
+                            để debug nó.</q></p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/page.PvP"
+                            class="icon icon-round icon-ghost icon-xs facebook-bg">
+                            <i class="ion-social-facebook"></i></a>
+                        <a href="sms:0777100449" class="icon icon-round icon-ghost icon-xs phone-bg">
+                            <i class="ion-ios-telephone"></i></a>
+                        <a href="#" class="icon icon-round icon-ghost icon-xs show-share-bottom border-magenta-dark">
+                            <i class="ion-android-share"></i></a>
+                        <!-- <a href="#" class="icon icon-round icon-ghost icon-xs back-to-top border-blue-light">
+                            <i class="ion-arrow-up-b"></i></a> -->
+                    </div>
+                    <div class="decoration"></div>
+                    <p class="copyright-text">Copyright <span id="copyright-year"></span>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="share-bottom share-dark">
+            <h3>Share Page</h3>
+            <div class="share-socials-bottom">
+                <a href="https://www.facebook.com/pvp.sad">
+                    <i class="ion-social-facebook-outline icon-ghost facebook-bg"></i>Facebook</a>
+                <a href="mailto:phatvphat@gmail.com?&subject=Check this page out!&body=Một chia sẻ từ PvP App.">
+                    <i class="ion-ios-email-outline icon-ghost mail-bg"></i>
+                    Email
+                </a>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top-badge"><i class="ion-android-arrow-dropup"></i>Back to Top</a>
+    </div>
+</body>
+
+</html>
